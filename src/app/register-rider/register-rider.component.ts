@@ -3,12 +3,12 @@ import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
-    selector: 'app-body',
+    selector: 'app-register-rider',
     standalone: true,
-    templateUrl: './body.component.html',
-    styleUrl: './body.component.css',
+    templateUrl: './register-rider.component.html',
+    styleUrl: './register-rider.component.css',
     imports: [HeaderComponent, FooterComponent]
 })
-export class BodyComponent {
+export class RegisterRiderComponent {
 
 }
