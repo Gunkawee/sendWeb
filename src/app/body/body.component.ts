@@ -10,5 +10,9 @@ import { FooterComponent } from "../footer/footer.component";
     imports: [HeaderComponent, FooterComponent]
 })
 export class BodyComponent {
+    calPrice(){
+        alert("Hello World");
+        console.log("Hellow");
+    }
 
 }

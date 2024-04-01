@@ -1,0 +1,65 @@
+<header>
+    <nav class="bg-[#ED4128] z-50">
+        <div class="container max-w-full px-7 py-3 ">
+            <div class=" md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                    <div class="text-xl font-semibold text-gray-700">
+                        <a href="#" class="text-white text-xl font-bold hover:text-gray-700 md:text-2xl">SENd</a>
+                    </div>
+
+
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden">
+                        <button type="button"
+                            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                            aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div class="hidden-mx-4 md:flex md:items-center">
+                    <a href="#"
+                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">หน้าแรก</a>
+
+                    <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
+                        <div class="row-auto">
+                            <span class="">สมัครเป็นพาร์ทเนอร์</span>
+                            <svg class="fill-current inline h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </div>
+
+
+                        <ul class="absolute hidden bg-[#ED4128] text-white  pt-1 group-hover:block ">
+                            <li class="">
+                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
+                                    href="/register">Register Rider</a>
+                            </li>
+                            <!-- <li class="">
+                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
+                                    href="#">Register Partner</a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+
+                    <!-- <a href="#"
+                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a> -->
+                    <a href="/news"
+                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
+                    <a href="#"
+                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<app-footer></app-footer>
