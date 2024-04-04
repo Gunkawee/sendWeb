@@ -11,6 +11,7 @@ import { provideRouter } from '@angular/router';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [RouterOutlet, HeaderComponent, BodyComponent, FooterComponent]
+    
 })
 export class AppComponent {
   title = 'senddeliverly';

@@ -1,75 +1,14 @@
-<header>
-    <nav class="bg-[#ED4128] z-50">
-        <div class="container max-w-full px-7 py-3 ">
-            <div class=" md:flex md:items-center md:justify-between">
-                <div class="flex justify-between items-center">
-                    <div class="text-xl font-semibold text-gray-700">
-                        <a href="#" class="text-white text-xl font-bold hover:text-gray-700 md:text-2xl">SENd</a>
-                    </div>
-
-
-                    <!-- Mobile menu button -->
-                    <div class="flex md:hidden">
-                        <button type="button"
-                            class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
-                            aria-label="toggle menu">
-                            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path fill-rule="evenodd"
-                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                <div class="hidden-mx-4 md:flex md:items-center">
-                    <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">หน้าแรก</a>
-
-                    <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
-                        <div class="row-auto">
-                            <span class="">สมัครเป็นพาร์ทเนอร์</span>
-                            <svg class="fill-current inline h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
-                        </div>
-
-
-                        <ul class="absolute hidden bg-[#ED4128] text-white  pt-1 group-hover:block ">
-                            <li class="">
-                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                    href="/register">Register Rider</a>
-                            </li>
-                            <!-- <li class="">
-                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                    href="#">Register Partner</a>
-                            </li> -->
-
-                        </ul>
-                    </div>
-
-                    <!-- <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a> -->
-                    <a href="/news"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
-                    <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<app-header></app-header>
 
     <div class="container-fluid z-0 overflow-hidden">
         <img src=".\assets\logoregister.PNG" alt="talian Trulli" srcset=""
             class="w-full bg-cover bg-center hover:scale-105 transition-all duration-500 cursor-pointer z-0 overflow-y-hidden">
     </div>
-</header>
+
 <div class="w-full max-w md:flex-col">
     <div class="flex flex-row-reverse">
         <button
-            class="flex items-center justify-center w-5/12 h-9 mr-24 bg-[#00BA00] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
+            class="flex items-center justify-center w-full md:w-5/12 h-9 mx-10 md:mx0 md:mr-24 bg-[#00BA00] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
             <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600" href="/registerForm">สมัครเลย</a>
         </button>
     </div>
@@ -77,7 +16,7 @@
 
     <div class="flex justify-end">
         <div
-            class="flex flex-col justify-center items-center text-center p-5 mr-24 m-5  w-5/12 bg-[#D9D9D9] border  rounded-2xl">
+            class="flex flex-col justify-center items-center text-center p-5 mx-10 md:mx-0 md:mr-24 m-5  md:w-5/12 bg-[#D9D9D9] border  rounded-2xl">
             <div class="font-semibold text-xl">
                 นโยบายความเป็นส่วนตัวสำหรับลูกค้า
             </div>
@@ -94,14 +33,14 @@
 
         </div>
     </div>
-    <div class="flex justify-end mr-28">
-        <div class="flex flex-row-reverse justify-between w-5/12">
+    <div class="flex justify-end flex-row mx-10 md:mx-0 md:mr-28">
+        <div class="flex flex-col md:flex-row justify-between w-full md:w-5/12 md:gap-8">
             <button
-                class="flex items-center justify-center h-9  bg-[#ED4C29] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
+                class="flex items-center md:w-full justify-center h-9 mb-5 md:mb-0 bg-[#ED4C29] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
                 ดาว์โหลดนโยบาย (TH)
             </button>
             <button
-                class="flex items-center justify-center h-9  bg-[#ED4C29] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
+                class="flex items-center md:w-full justify-center h-9  bg-[#ED4C29] hover:bg-[#00BAAA] text-white font-bold py-8 px-4 border  rounded-2xl">
                 Download Policy (EN)
             </button>
         </div>
@@ -112,13 +51,11 @@
     </div>
     <!-- For Faq -->
     <div
-        class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
+        class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 mb-5 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
         <div class="mx-auto px-5">
             <div class="flex flex-col items-center">
                 <h2 class="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
-                <p class="mt-3 text-lg text-neutral-500 md:text-xl">Frequenty asked questions
-
-                </p>
+              
             </div>
             <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
                 <div class="py-5">

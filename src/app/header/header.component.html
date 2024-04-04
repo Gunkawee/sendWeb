@@ -1,13 +1,15 @@
 <!-- component -->
+
 <header>
-    <nav class="bg-[#ED4128] h-20  z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
+    
+    <nav class="bg-[#ED4128] w-full max-w-full  h-20  z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
         <div class="md:flex md:items-center flex flex-wrap pt-5 md:justify-betwee justify-between mx-10">
             <div class="text-xl font-semibold text-gray-700">
                 <a href="#" class="text-white text-xl font-bold hover:text-gray-700 md:text-2xl">SENd</a>
             </div>
             <button data-collapse-toggle="navbar-dropdown" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-dropdown" aria-expanded="false">
+                aria-controls="navbar-dropdown" aria-expanded="false" (click)="click()">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 17 14">
@@ -15,12 +17,12 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <div class="hidden w-full md:block md:w-auto z-50 md:bg-transparent  bg-[#ED4128]" id="navbar-dropdown">
                 <div class="hidden-mx-4 md:flex md:items-center">
                     <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">หน้าแรก</a>
+                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">หน้าแรก</a>
 
-                    <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
+                    <!-- <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
                         <div class="row-auto">
                             <span class="">สมัครเป็นพาร์ทเนอร์</span>
                             <svg class="fill-current inline h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -32,21 +34,21 @@
                             <li class="">
                                 <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
                                     href="/register">Register Rider</a>
-                            </li>
+                            </li> -->
                             <!-- <li class="">
                                 <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
                                     href="/registerForm">Register Partner</a>
                             </li> -->
 
-                        </ul>
-                    </div>
+                        <!-- </ul>
+                    </div> -->
 
-                    <!-- <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a> -->
+                    <a href="/register"
+                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a>
                     <a href="/news"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
+                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
                     <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
+                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
                 </div>
             </div>
         </div>

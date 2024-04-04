@@ -1,0 +1,8 @@
+.bg-color:hover{
+    background-color: rgb(247, 64, 94);
+    color: #fff;
+    border-radius: 10px;
+}
+.bg-menu{
+    padding: .5rem;
+}

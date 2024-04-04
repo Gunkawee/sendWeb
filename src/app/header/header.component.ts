@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+[x: string]: any;
+  click(){
+    console.log("Click");
+  }
   
 
 }
