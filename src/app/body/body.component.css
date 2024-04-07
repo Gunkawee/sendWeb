@@ -3,3 +3,23 @@
     background-image: url("/assets/Mask group (1).png");
     background-repeat: no-repeat;
 }
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+  }
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .store-btn-apple{
+    height: 57px;
+  }
