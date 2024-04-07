@@ -3,3 +3,12 @@
     background-image: url("/assets/Mask group (1).png");
     background-repeat: no-repeat;
 }
+.g-height{
+    height: 20rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+}
+.g-heightbaby{
+    height: 20rem;
+}

@@ -1,117 +1,88 @@
 <!-- component -->
 
 <header>
-    
-    <nav class="bg-[#ED4128] w-full max-w-full flex-no-wrap fixed h-20  z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
-        <div class="g-flex flex flex-row justify-around w-full max-w-full ">
-            <div class="text-xl font-semibold text-gray-700 ">
-                <a href="#" class="text-white text-xl font-bold  md:text-2xl">SENd</a>
-            </div>
-            <button data-collapse-toggle="navbar-dropdown" type="button"
-                class="items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-dropdown" aria-expanded="false" (click)="click()">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto z-50 md:bg-transparent  bg-[#ED4128]" id="navbar-dropdown">
-                <div class="hidden-mx-4 md:flex md:items-center">
-                    <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">หน้าแรก</a>
-
-                    <!-- <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
-                        <div class="row-auto">
-                            <span class="">สมัครเป็นพาร์ทเนอร์</span>
-                            <svg class="fill-current inline h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
-                        </div>
-                        <ul class="absolute hidden  text-white  pt-1 group-hover:block">
-                            <li class="">
-                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                    href="/register">Register Rider</a>
-                            </li> -->
-                            <!-- <li class="">
-                                <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                    href="/registerForm">Register Partner</a>
-                            </li> -->
-
-                        <!-- </ul>
-                    </div> -->
-
-                    <a href="/register"
-                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a>
-                    <a href="/news"
-                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
-                    <a href="#"
-                        class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
-                </div>
-            </div>
+    <!-- Main navigation container -->
+    <nav
+      class="relative flex w-full flex-wrap items-center justify-between bg-[#ED4128] py-2 shadow-dark-mild dark:bg-neutral-700 lg:py-4"
+      data-twe-navbar-ref
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+  
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button"
+          data-twe-collapse-init
+          data-twe-target="#navbarSupportedContent4"
+          aria-controls="navbarSupportedContent4"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Hamburger icon -->
+          <span
+            class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+  
+        <!-- Collapsible navbar container -->
+        <div
+          class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+          id="navbarSupportedContent4"
+          data-twe-collapse-item
+        >
+          <!-- Left links -->
+          <ul
+            class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
+            data-twe-navbar-nav-ref
+          >
+            <!-- Home link -->
+            <li class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2" data-twe-nav-item-ref>
+              <a
+                class="text-white transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/20 active:text-black/20 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                aria-current="page"
+                href="#"
+                data-twe-nav-link-ref
+                >SENd</a
+              >
+            </li>
+          </ul>
+  
+          <div class="flex items-center">
+              <a
+              href="#"
+              class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600"
+              >หน้าแรก</a
+            >
+            <a
+              href="/register"
+              class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600"
+              >สมัครเป็นพาร์ทเนอร์</a
+            >
+            <a
+              href="/news"
+              class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600"
+              >กระดานข่าวสาร</a
+            >
+            <a
+              href="#"
+              class="block mx-4 mt-2 md:mt-0 text-sm bg-color bg-menu text-white capitalize hover:text-blue-600"
+              >ศูนย์ความช่วยเหลือ</a
+            >
+          </div>
         </div>
+      </div>
     </nav>
-</header>
-<!-- max-w-screen-xl flex flex-wrap items-center justify-between mx-auto -->
-
-<!-- <nav class="bg-[#ED4128] z-50">
-    <div class="container max-w-full px-7 py-3 ">
-        <div class=" md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center">
-                <div class="text-xl font-semibold text-gray-700">
-                    <a href="#" class="text-white text-xl font-bold hover:text-gray-700 md:text-2xl">SENd</a>
-                </div> -->
-
-
-                <!-- Mobile menu button -->
-                <!-- <div class="flex md:hidden">
-                    <button type="button"
-                        class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
-                        aria-label="toggle menu">
-                        <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                            <path fill-rule="evenodd"
-                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-            </div> -->
-
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <!-- <div class="hidden-mx-4 md:flex md:items-center">
-                <a href="#"
-                    class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">หน้าแรก</a>
-
-                <div class="group  mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">
-                    <div class="row-auto">
-                        <span class="">สมัครเป็นพาร์ทเนอร์</span>
-                        <svg class="fill-current inline h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20">
-                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                    </div>
-                    <ul class="absolute hidden  text-white  pt-1 group-hover:block">
-                        <li class="">
-                            <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                href="/register">Register Rider</a>
-                        </li> -->
-                        <!-- <li class="">
-                            <a class=" py-2 px-4 block whitespace-no-wrap hover:text-blue-600"
-                                href="/registerForm">Register Partner</a>
-                        </li> -->
-
-                    <!-- </ul>
-                </div> -->
-
-                <!-- <a href="#"
-                    class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">สมัครเป็นพาร์ทเนอร์</a> -->
-                <!-- <a href="/news"
-                    class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">กระดานข่าวสาร</a>
-                <a href="#"
-                    class="block mx-4 mt-2 md:mt-0 text-sm text-white capitalize hover:text-blue-600">ศูนย์ความช่วยเหลือ</a>
-            </div>
-        </div>
-    </div>
-</nav> -->
+   
+  </header>
