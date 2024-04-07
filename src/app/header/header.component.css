@@ -6,3 +6,13 @@
 .bg-menu{
     padding: .5rem;
 }
+
+.g-flex{
+    padding-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 20px;
+    
+   
+    
+}
+/* md:flex md:items-center flex flex-row flex-wrap pt-5 md:justify-betwee justify-between mx-10 */
