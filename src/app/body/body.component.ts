@@ -10,9 +10,19 @@ import { FooterComponent } from "../footer/footer.component";
     imports: [HeaderComponent, FooterComponent]
 })
 export class BodyComponent {
-    calPrice(){
-        alert("Hello World");
-        console.log("Hellow");
+    weight = 0;
+    calculate(xCal:any,yCal:any){
+            console.log(parseInt(xCal) + parseInt(yCal));
+            
+        if (parseInt(xCal) + parseInt(yCal) < 50) {
+            this.weight = 28;
+        } if(parseInt(xCal) + parseInt(yCal) < 40){
+            this.weight = 18;
+        } if(parseInt(xCal) + parseInt(yCal) < 30){
+            this.weight = 14;
+        } if(parseInt(xCal) + parseInt(yCal) < 15){
+            this.weight = 9;
+        }
     }
 
 }

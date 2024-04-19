@@ -14,5 +14,5 @@ import { provideRouter } from '@angular/router';
     
 })
 export class AppComponent {
-  title = 'senddeliverly';
+  title = 'SENd - Send Delivery';
 }
