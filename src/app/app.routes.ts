@@ -6,6 +6,7 @@ import { NewsComponent } from './news/news.component';
 import { ReadnewsComponent } from './readnews/readnews.component';
 import { Readnews2Component } from './readnews2/readnews2.component';
 import { Readnews3Component } from './readnews3/readnews3.component';
+import { PolicyComponent } from './policy/policy.component';
 
 export const routes: Routes = [
     {"path" : "",component:BodyComponent},
@@ -15,4 +16,5 @@ export const routes: Routes = [
      {"path" : "readNews",component:ReadnewsComponent},
      {"path" : "readNews2",component:Readnews2Component},
      {"path" : "readNews3",component:Readnews3Component},
+     {"path" : "policy",component:PolicyComponent},
 ]; 
