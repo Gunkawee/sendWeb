@@ -25,7 +25,7 @@ policyTh(){
 
 }
 policyEn(){
-
+  this.router.navigate(['/policy'],{queryParams:{policyEn:this.policyEnSt}})
 }
 
 }
